@@ -5,7 +5,7 @@
 ## 常用命令
 
 ```bash
-pnpm dev          # 本地开发预览（http://localhost:4321/blog/）
+pnpm dev          # 本地开发预览（http://localhost:4321/）
 pnpm build        # 构建 + Pagefind 搜索索引
 pnpm preview      # 预览构建产物
 pnpm sync         # 从 Obsidian 库同步白名单文章（见下）
@@ -52,10 +52,14 @@ pnpm new-post     # 手动新建文章
 
 ## 部署（GitHub Pages）
 
-1. 在 GitHub 创建**公开**仓库 `blog`
-2. `git remote add origin https://github.com/Yao-MY06/blog.git && git push -u origin main`
-3. 仓库 Settings → Pages → Source 选 **GitHub Actions**
-4. 之后每次 push 到 main 自动构建部署：`https://Yao-MY06.github.io/blog/`
+站点是**用户页**（根路径），仓库必须叫 `Yao-MY06.github.io`：
+
+1. 仓库 `Yao-MY06/Yao-MY06.github.io`（public）
+2. 仓库 Settings → Pages → Source 选 **GitHub Actions**
+3. 之后每次 push 到 main 自动构建部署：`https://Yao-MY06.github.io/`
+
+> 若仓库改名（比如从 `blog` 改成 `Yao-MY06.github.io`），`astro.config.mjs` 的 `base` 必须同步：
+> 用户页根路径写 `"/"`，项目页（`/blog/`）写 `"/blog"`。二者只差这一处。
 
 历史已压缩为单提交。上游模版地址：https://github.com/saicaca/fuwari ，如需吸收上游更新，参考上游仓库手动对比合并。
 

@@ -239,6 +239,6 @@ docker cp mysql8:/var/log/x.log ./   # 容器里拷文件出来
 
 # 四、使用建议（连回辅助线）
 
-1. 辅助线轮到工具日时，从「场景题」里挑一个没做过的，在实验室机上真跑一遍，把命令和结果记一条到 [最小笔记](/blog/posts/knowledge-processing-sop/)。
+1. 辅助线轮到工具日时，从「场景题」里挑一个没做过的，在实验室机上真跑一遍，把命令和结果记一条到 [最小笔记](/posts/knowledge-processing-sop/)。
 2. 本册不进阅读计划；**项目一 Docker Compose 环境（P0 阶段）会把 3.2/3.3 全部变成实战**，到时回来对着搭。
 3. 每条命令的完整参数：`man xxx` 或 `xxx --help`，看一手文档。

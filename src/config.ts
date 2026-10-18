@@ -83,7 +83,7 @@ export const expressiveCodeConfig: ExpressiveCodeConfig = {
 
 export const giscusConfig: GiscusConfig = {
 	enable: false, // 完成仓库侧配置后改 true
-	repo: "Yao-MY06/blog",
+	repo: "Yao-MY06/Yao-MY06.github.io",
 	repoId: "", // 在 https://giscus.app 生成
 	category: "Announcements",
 	categoryId: "",

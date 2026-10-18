@@ -12,7 +12,7 @@ const MANIFEST = path.join(ROOT, "scripts", ".sync-manifest.json");
 function readBase() {
 	const cfg = fs.readFileSync(path.join(ROOT, "astro.config.mjs"), "utf8");
 	const m = cfg.match(/base:\s*"([^"]*)"/);
-	return m ? m[1] : "/";
+	return (m ? m[1] : "/").replace(/\/+$/, ""); // 去掉尾部斜杠：base="/" 时拼出 /posts/... 而非 //posts/...
 }
 const BASE = readBase();
 

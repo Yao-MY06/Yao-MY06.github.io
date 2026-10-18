@@ -27,7 +27,7 @@ import { pluginCustomCopyButton } from "./src/plugins/expressive-code/custom-cop
 // https://astro.build/config
 export default defineConfig({
 	site: "https://Yao-MY06.github.io",
-	base: "/blog",
+	base: "/", // 用户页站点（仓库名 Yao-MY06.github.io），部署在根路径
 	trailingSlash: "always",
 	integrations: [
 		tailwind({

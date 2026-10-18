@@ -213,7 +213,7 @@ finally { payApiLimit.release(); }
 7. happens-before 规则举三例。
 8. CountDownLatch vs CyclicBarrier。
 
-答不上的回对应章节，用 [AI辅助概念深度学习法](/blog/posts/ai-assisted-deep-learning/) 的问答闭环拆到能自讲。
+答不上的回对应章节，用 [AI辅助概念深度学习法](/posts/ai-assisted-deep-learning/) 的问答闭环拆到能自讲。
 
 ---
 
